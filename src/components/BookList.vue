@@ -1,15 +1,9 @@
 <template>
     <div>
-        <h1>
-            {{title}}
+        <h1>{{title}}</h1>
             <ul>
-
-            <li v-for="book in books">{{book.title}}; {{book.author}}
-            </li>
-            
+                <li v-for="book in books">{{book.title}}: {{book.author}}</li>
             </ul>
-            
-        </h1>
     </div>
 </template>
 
@@ -42,7 +36,7 @@ ul{
 
 }
 
-ol{
+li{
     display: block;
     margin: 0 10px;
 }
